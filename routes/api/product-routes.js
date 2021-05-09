@@ -10,10 +10,10 @@ router.get('/', (req, res) => {
   Product.findAll({
     include: [Category, Tag]
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 // get one product
@@ -23,10 +23,10 @@ router.get('/:id', (req, res) => {
   Product.findOne({
     include: [Category, Tag]
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 // create new product
@@ -110,10 +110,10 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 module.exports = router;

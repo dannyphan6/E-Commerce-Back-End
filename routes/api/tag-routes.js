@@ -9,10 +9,10 @@ router.get('/', (req, res) => {
   Tag.findAll({
     include: [Product]
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.get('/:id', (req, res) => {
@@ -21,19 +21,19 @@ router.get('/:id', (req, res) => {
   Tag.findOne({
     id: req.params.id
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.post('/', (req, res) => {
   // create a new tag
   Tag.create(req.body).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.put('/:id', (req, res) => {
@@ -43,10 +43,10 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.delete('/:id', (req, res) => {
@@ -56,10 +56,10 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch((err) => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 module.exports = router;

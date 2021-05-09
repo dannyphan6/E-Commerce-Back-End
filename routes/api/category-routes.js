@@ -9,10 +9,10 @@ router.get('/', (req, res) => {
   Category.findAll({
     include: [Product]
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch(err => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.get('/:id', (req, res) => {
@@ -24,19 +24,19 @@ router.get('/:id', (req, res) => {
     },
     include: [Product]
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch(err => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.post('/', (req, res) => {
   // create a new category
   Category.create(req.body).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch(err => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.put('/:id', (req, res) => {
@@ -46,10 +46,10 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch(err => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 router.delete('/:id', (req, res) => {
@@ -59,10 +59,10 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   }).then((data) => {
-    res.json(data)
+    res.json(data);
   }).catch(err => {
-    res.json(err)
-  })
+    res.json(err);
+  });
 });
 
 module.exports = router;
