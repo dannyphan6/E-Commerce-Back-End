@@ -13,10 +13,12 @@ Product.belongsTo(Category, {
 
 // Categories have many Products
 Category.hasMany(Product, {
+  // foreignKey is created in Product model with 'model & key'
   foreignKey: 'category_id'
 });
 
 // Products belongToMany Tags (through ProductTag)
+// Product is connected to Tags, which is referenced through ProductTag (EX: model &key)
 Product.belongsToMany(Tag, {
   through: ProductTag,
   foreignKey: 'product_id'
