@@ -30,6 +30,14 @@ Before running the application, the user must execute the command "npm install" 
 ## Usage
 In order to run this application, run the command "npm start" in the terminal. This will execute the application where the user will be able to create, view, update, and delete categories, products, and tags. Also, ensure that the database is seeded by running the command "npm run seed" This will create a database with dummy data. The user can test the routes to ensure proper functionality. 
 
+Below are links to videos on testing the GET routes, GET routes by ID, and POST, PUT, and DELETE routes:
+
+https://drive.google.com/file/d/1vEf3uAFs-S3gAzXMM28nChtOXrsvW5bV/view
+
+https://drive.google.com/file/d/1aW-E04z7PzFl5SUVI-_KvtzMO2oX6vWF/view
+
+https://drive.google.com/file/d/1oE6qETX3SrnKdUToIWDYs11MJ0lbmlxI/view
+
 ## Contributors
 Please feel free to create pull requests. They will be reviewed before merging. If you would like to make any major changes, please open an issue to discuss these changes.
 
